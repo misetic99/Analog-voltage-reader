@@ -1,0 +1,32 @@
+a = arduino('com6', 'uno');
+interval = 1;
+x = 0;
+y1 = 0;
+t = zeros(1, interval);
+napon = zeros(1, (interval));
+y = 0;
+t(1) = x;
+napon(1) = y;
+i = 0;
+max = 3.50;
+while (x < interval)
+    y1 = readVoltage(a, 'A0');
+    y = 3*y1;
+    x = x + 1;
+    t(i+1) = x;
+    napon(i+1) = y;
+    i = i + 1;
+    
+    if (y < max)
+        interval = interval + 1;
+    end
+    plot(x, y, 'r.');
+    axis([0, interval, 0, 10]);
+    xlabel('Vrijeme [sek]');
+    ylabel('Napon [V]');
+    grid on
+    hold on
+    tic;
+    pause(1);
+    toc;
+end
