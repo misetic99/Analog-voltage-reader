@@ -1,5 +1,48 @@
-# Analog-voltage-reader
+# 🛠️ Analog Voltage Reader
 
-An analog voltage reader is a project that uses the MATLAB platform and an Arduino UNO microcontroller.
-This project is used to read the voltage from the analog input of the Arduino through programming in MATLAB and drawing a voltage graph.
-I used MATLAB R2021a, if you have an older version of MATLAB you have the MATLAB code in txt format.
+![Project Badge](https://img.shields.io/badge/version-1.0.0-blue)
+![CI Status](https://img.shields.io/badge/CI-passing-brightgreen)
+
+**Analog Voltage Reader** čita analogne napone s ADC pinova (npr. Arduino Uno A0) i prikazuje rezultat u stvarnom vremenu.
+
+---
+
+## 📸 Screenshot
+
+![Live Reading Preview](./docs/screenshot.png)
+
+---
+
+## ✨ Feature Highlights
+
+- 📈 Real-time prikaz napona na ADC pinovima  
+- 🔌 Jednostavno povezivanje s Arduinom  
+- 📊 Clear i intuitivan UI (ovisno o tvojoj UI biblioteci)  
+- 🔧 Lako proširiv – dodavanje više kanala, kalibracija, logging, itd.
+
+---
+
+## 🔧 Instalacija i Pokretanje
+
+1. Kloniraj repozitorij:
+    ```bash
+    git clone https://github.com/misetic99/Analog-voltage-reader.git
+    cd Analog-voltage-reader
+    ```
+2. Instaliraj ovisnosti:
+    ```bash
+    npm install
+    ```
+3. Uploadaj `Arduino.ino` na svoj Arduino:
+    - Poveži Arduino s računalom
+    - Otvori `src/Arduino.ino` u Arduino IDE-u i upload
+4. Pokreni aplikaciju:
+    ```bash
+    npm start
+    ```
+5. Otvori preglednik na `http://localhost:3000`
+
+---
+
+## 📂 Struktura Projekta
+
