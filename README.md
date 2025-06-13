@@ -33,9 +33,10 @@
     ```bash
     npm install
     ```
-3. Uploadaj `Arduino.ino` na svoj Arduino:
-    - Poveži Arduino s računalom
-    - Otvori `src/Arduino.ino` u Arduino IDE-u i upload
+3. Pokreni MATLAB skriptu:
+    - Otvori `src/analog_reader.m` u MATLAB-u
+    - Pokreni skriptu pritiskom na `Run`
+    - Skripta čita napon s povezanog ADC uređaja (npr. Arduino preko serijskog porta) i prikazuje vrijednosti
 4. Pokreni aplikaciju:
     ```bash
     npm start
